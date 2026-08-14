@@ -16,6 +16,8 @@ Toko Sembako Ariesta adalah aplikasi web berbasis Node.js dan Express.js yang di
    ```bash
    npm install
 
+## Jalankan server via nodemon:
+npm run dev
 
 # Langkah Terakhir di VS Code:
 1. Pastikan file gambar screenshot kamu sudah dimasukkan ke dalam folder proyek (misalnya buat folder `screenshots` dan simpan gambarnya di dalam sana, lalu sesuaikan path-nya di `README.md`).
@@ -27,6 +29,7 @@ Toko Sembako Ariesta adalah aplikasi web berbasis Node.js dan Express.js yang di
    git push
 
 ### Bukti Pengujian API
+
 ![Bukti Testing](screenshots/Screenshot%2026-08-14%20121930.png)
 ![Bukti Testing](screenshots/Screenshot%202026-08-14%20121837.png)
 ![Uji Coba 1](Screenshot%202026-08-14%20121837.png)
@@ -35,3 +38,7 @@ Toko Sembako Ariesta adalah aplikasi web berbasis Node.js dan Express.js yang di
 ![Uji Coba 4](Screenshot%202026-08-14%20122324.png)
 ![Uji Coba 5](Screenshot%202026-08-14%20123735.png)
 ![Uji Coba 6](Screenshot%202026-08-14%20124016.png)
+
+## Penjelasan Tampilan (UI)
+* **Halaman Dashboard Admin:** Antarmuka utama berbasis web yang dilindungi sistem autentikasi untuk mempermudah pemilik toko mengelola data stok dan produk sembako.
+* **Halaman Interaktif / Tanya AI:** Fitur halaman web yang menyediakan layanan tanya jawab interaktif bagi pelanggan secara *real-time*.
