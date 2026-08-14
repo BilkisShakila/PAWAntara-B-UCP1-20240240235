@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Sembako Ariesta - Detail Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <%- include('partials/navbar') %>
+
+  <main class="max-w-3xl mx-auto px-6 py-10">
+    <% if (!product) { %>
+      <div class="text-center py-16">
+        <h1 class="text-2xl font-bold text-red-600 mb-3">Produk Tidak Ditemukan</h1>
+        <p class="text-gray-600 mb-6">Maaf, produk yang kamu cari tidak tersedia.</p>
+        <a href="/produk" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+          Kembali ke Daftar Produk
+        </a>
+      </div>
+    <% } else { %>
+      <a href="/produk" class="text-blue-600 hover:underline text-sm">&larr; Kembali ke Produk</a>
+
+      <article class="bg-white rounded-lg shadow p-8 mt-4">
+        <h1 class="text-2xl font-bold mb-2"><%= product.name %></h1>
+        <p class="text-sm text-gray-500 mb-4">Kategori: <%= product.category %></p>
+        <p class="text-3xl text-blue-600 font-bold mb-4">
+          Rp <%= product.price.toLocaleString('id-ID') %>
+        </p>
+        <p class="text-gray-700 mb-6">Stok tersedia: <%= product.stock %> unit</p>
+        <a href="/tanya-ai" class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+          Tanya Ketersediaan / Ongkir
+        </a>
+      </article>
+    <% } %>
+  </main>
+
+  <%- include('partials/footer') %>
+
+</body>
+</html>
