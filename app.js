@@ -195,4 +195,5 @@ app.post('/api/chat', (req, res) => {
 });
 
 // Menyalakan Server
+// update langkah 5
 app.listen(PORT, () => console.log(`Server berjalan di http://localhost:${PORT}`));
